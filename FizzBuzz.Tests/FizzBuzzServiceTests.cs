@@ -67,7 +67,6 @@ namespace FizzBuzz.Tests
         {
             // Arrange
             IFizzBuzzService fizzBuzzService = new FizzBuzzService();
-
             var expectedList = new List<string>() { "1", "2", "Fizz", "4", "Buzz" };
 
             // Act
