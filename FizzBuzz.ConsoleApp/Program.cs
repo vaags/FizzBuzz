@@ -6,7 +6,14 @@ namespace FizzBuzz.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IFizzBuzzService fizzBuzzService = new FizzBuzzService();
+
+            foreach (var result in fizzBuzzService.GetFizzBuzzResults(100))
+            {
+                Console.WriteLine(result);
+            }
+
+            Console.ReadLine();
         }
     }
 }
