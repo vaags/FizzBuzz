@@ -67,11 +67,11 @@ namespace FizzBuzz.Tests
         {
             // Arrange
             IFizzBuzzService fizzBuzzService = new FizzBuzzService();
-            const int numberOfItems = 5;
+
             var expectedList = new List<string>() { "1", "2", "Fizz", "4", "Buzz" };
 
             // Act
-            var results = fizzBuzzService.GetFizzBuzzResults(numberOfItems);
+            var results = fizzBuzzService.GetFizzBuzzResults(expectedList.Count);
 
             // Assert
             Assert.Equal(expectedList, results);
