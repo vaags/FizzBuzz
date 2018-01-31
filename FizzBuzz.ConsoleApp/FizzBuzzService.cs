@@ -2,12 +2,6 @@
 
 namespace FizzBuzz.ConsoleApp
 {
-    public interface IFizzBuzzService
-    {
-        string GetFizzBuzzValue(int i);
-        List<string> GetFizzBuzzResults(int numberOfItems);
-    }
-
     public class FizzBuzzService : IFizzBuzzService
     {
         public string GetFizzBuzzValue(int i)
