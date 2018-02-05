@@ -5,6 +5,6 @@ namespace FizzBuzz.ConsoleApp
     public interface IFizzBuzzService
     {
         string GetFizzBuzzValue(int i);
-        List<string> GetFizzBuzzResults(int numberOfItems);
+        IEnumerable<string> GetFizzBuzzResults(int numberOfItems);
     }
 }
